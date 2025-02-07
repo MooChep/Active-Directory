@@ -53,35 +53,47 @@ cd C:\Windows\System32\Sysprep
 sysprep.exe
 ```
 **Cloner la VM Windows Server :**
-![[AD.png|600]]
+
+<img src=https://github.com/MooChep/Active-Directory/blob/main/assets/AD.png width="400">
+
 2. **Ajouter un nom** (exemple : AD1)
 3. **Sélectionner le clone lié**
 Le clone lié permet d'économiser de l'espace disque
 4. **Recommandé** : générer de nouvelles adresses MAC pour toutes les interfaces réseaux 
-![[AD2.png|600]]
+
+<img src=https://github.com/MooChep/Active-Directory/blob/main/assets/AD2.png width="400">
+
 5. Dans les configurations des **VM serveur & client**, change le mode d'accès réseau en **Réseau privé hôte**. 
-![[AD3.png|600]]
+
+<img src=https://github.com/MooChep/Active-Directory/blob/main/assets/AD3.png width="400">
 
 ### Configuration des Guests Additions :
 
 - Un message d'avertissement nous indique que les _Guests Additions_ doivent être installées. Nous allons nous occuper de ça par la suite.
-![[AD4.png|600]]
+
+<img src=https://github.com/MooChep/Active-Directory/blob/main/assets/AD4.png width="400">
 
 1. **Noter un mot de passe Administrateur**. (Ici Admin2025!)
-![[AD5.png|600]]
+
+<img src=https://github.com/MooChep/Active-Directory/blob/main/assets/AD5.png width="400">
+
 2. Pour installer les Guests Additions sur Virtual Box :
     - Allez dans **Périphériques > Insérer l'image CD des additions invités**. 
-![[AD6.png|600]]
+
+<img src=https://github.com/MooChep/Active-Directory/blob/main/assets/AD6.png width="400">
+
 3. Accède au lecteur CD et lance l'exécutable **VBoxWindowsAdditions**.
 4. Suis l'installateur et redémarre la machine. 
-![[AD7.png|600]]
+
+<img src=https://github.com/MooChep/Active-Directory/blob/main/assets/AD7.png width="400">
 
 Désormais la VM est prête ! Installons l'Active Directory 1. 
 
 ## **Étape 2 : Installer l'AD1**
 
 Lancer **PowerShell ISE** afin de simplifier la modification et l'execution des scripts. 
-![[AD8.png|600]]
+
+<img src=https://github.com/MooChep/Active-Directory/blob/main/assets/AD8.png width="400">
 
 
 ### Script : _setup_DC1.ps1_
