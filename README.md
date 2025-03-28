@@ -11,7 +11,7 @@ La documentation inclut des scripts PowerShell permettant d’automatiser plusie
 ✅ Création et gestion des stratégies de groupe (GPO)  
 ✅ Mise en place d’un partage réseau  
 
-📌 **Technologies utilisées :**  
+📌 **Technologies et outils utilisées :**  
 - Windows Server 2022  
 - Windows 11  
 - VirtualBox  
